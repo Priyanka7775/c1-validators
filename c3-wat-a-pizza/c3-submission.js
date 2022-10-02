@@ -38,6 +38,26 @@ var beveragePrice=1.99;
 
 // define function getPriceOfPizzaBasedOnSize() to return price of pizza for the 
 // size passed as parameter.
+function getPriceOfPizzaBasedOnSize(){
+   pizzaPrice=0;​
+switch(size){​
+    case S: ​
+    pizzaPrice = 9.99;​
+        break;​
+    case M:​
+    pizzaPrice = 11.99;​
+        break;​
+    case L: ​
+    pizzaPrice = 13.99;​
+        break;​
+    default:    ​
+        alert('Invalid size, Enter S,M or L');​
+        pizzaPrice = 0;​
+        break;​
+   }
+   return pizzaPrice;
+}
+
 
 
 
